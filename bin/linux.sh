@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#exec >> ~/linuxsetup.log 2>&1 #redirect to output
+exec >> ./linuxsetup.log 2>&1 #redirect to output
 
 if [[ "$(uname)" != "Linux" ]]; then # If the output of uname is != Linux
     echo "Error: This script must be run on a Linux operating system."
