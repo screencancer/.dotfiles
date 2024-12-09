@@ -14,7 +14,7 @@ clean:
 	@echo "Running cleanup.sh to reverse any changes..."
 	./bin/cleanup.sh  # Run the cleanup.sh script
 
-# Ensure that the .sh scripts are executable before running
+# Ensure that the .sh scripts are executable before running due to permissions
 .PHONY: permissions
 permissions:
-	chmod +x ./bin/linux.sh ./bin/cleanup.sh  # Set execute permissions for the scripts
+	chmod +x ./bin/linux.sh ./bin/cleanup.sh  # Set permissions
