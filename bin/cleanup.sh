@@ -14,7 +14,7 @@ echo "Removed 'source ~/.dotfiles/etc/bashrc custom' from .bashrc."
 
 # Remove the .TRASH directory from the home directory
 if [[ -d "$HOME/.TRASH" ]]; then  # Check if .TRASH directory exists
-    rm -rf ~/.TRASH/*
+    rm -rf ~/.TRASH/
     echo "Removed .TRASH directory from home directory."
 else
     echo ".TRASH directory not found, nothing to remove."
