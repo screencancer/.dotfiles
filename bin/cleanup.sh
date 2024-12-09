@@ -12,6 +12,8 @@ fi
 sed -i '/source ~\/\.dotfiles\/etc\/bashrc custom/d' "$HOME/.bashrc"  # Delete the line
 echo "Removed 'source ~/.dotfiles/etc/bashrc custom' from .bashrc."
 
+mv ./linuxsetup.log ~/.TRASH/ #move logs to trash for removal with directory
+
 # Remove the .TRASH directory from the home directory
 if [[ -d "$HOME/.TRASH" ]]; then  # Check if .TRASH directory exists
     rm -rf ~/.TRASH/
